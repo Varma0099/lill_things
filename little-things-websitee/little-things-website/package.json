@@ -2,7 +2,6 @@
   "name": "little-things-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Varma0099.github.io/little_things",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
