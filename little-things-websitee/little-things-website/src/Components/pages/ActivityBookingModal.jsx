@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://lill-things-backend.onrender.com';
 
 const timeSlots = [
   '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM',

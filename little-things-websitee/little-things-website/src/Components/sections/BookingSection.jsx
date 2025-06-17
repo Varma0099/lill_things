@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import io from 'socket.io-client';
 import { Calendar, Clock, Users, Palette, Sparkles, ArrowRight, Check } from "lucide-react";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://lill-things-backend.onrender.com';
 
 const activities = [
   { name: 'Pottery Making', icon: '🏺', color: 'from-pink-500 to-rose-500', description: 'Shape clay into beautiful pottery' },
