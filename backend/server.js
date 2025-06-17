@@ -12,7 +12,14 @@ const activitiesRouter = require('./routes/activities');
 
 const app = express();
 const server = http.createServer(app);
-
+// Root route - MUST HAVE THIS
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'Backend API is running!',
+    status: 'success',
+    timestamp: new Date().toISOString()
+  });
+});
 // Connect to MongoDB
 connectDB();
 
