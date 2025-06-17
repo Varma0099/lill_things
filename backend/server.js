@@ -23,8 +23,16 @@ app.get('/', (req, res) => {
 // Connect to MongoDB
 connectDB();
 
+const allowedOrigins = [
+  'http://localhost:3000', // for local development
+  'https://lill-things-frontendd.onrender.com' // your deployed frontend
+];
+
 // Middleware
-app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
 app.use(express.json());
 
 // API routes
